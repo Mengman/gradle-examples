@@ -1,0 +1,18 @@
+plugins {
+    id 'base'
+}
+
+task zip(type: Zip) {
+    from 'src'
+}
+
+task copy(type: Copy) {
+    from 'src'
+    into 'dest'
+}
+
+task hello {
+    doLast {
+        println 'Hello, World!'
+    }
+}
